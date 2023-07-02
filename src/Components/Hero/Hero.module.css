@@ -1,0 +1,80 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 100px);
+  font-family: "Inter", sans-serif;
+  font-family: "Karla", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.hero_content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #1c1c1c;
+}
+
+.hero_content h1 {
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-size: 70px;
+  font-family: Plus Jakarta Sans;
+}
+
+/* .hero_content h1 {
+  margin-bottom: -10px;
+} */
+
+.hero_content h1 {
+  font-weight: 400;
+}
+
+.hero_content__button button {
+  text-align: center;
+  width: 90px;
+  height: 40px;
+  padding: 7px 20px;
+  border-radius: 8px;
+  margin-right: 8px;
+  /* border: none; */
+  font-weight: bold;
+
+  font-family: "Inter", sans-serif;
+  font-family: "Karla", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
+
+  cursor: pointer;
+}
+
+.hero_content__button___github {
+  background: #1c1c1c;
+  color: #fff;
+  border: none;
+}
+
+.hero_content__button___linkedin {
+  background-color: #fff;
+  border: 1.5px solid #1c1c1c;
+  text-align: center;
+}
+
+.chevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  animation-name: main-animation;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes main-animation {
+  from {
+    transform: translateY(-5px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+}
