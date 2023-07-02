@@ -1,0 +1,24 @@
+.nav {
+  display: flex;
+  color: var(--primary-color);
+}
+
+.nav_links {
+  list-style-type: none;
+  display: flex;
+  flex: 1;
+  font-size: large;
+  font-weight: 700;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px;
+}
+
+.nav_links ul li {
+  cursor: pointer;
+}
+
+.nav_darkmode {
+  height: 20px;
+  padding: 10px;
+}
