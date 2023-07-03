@@ -78,3 +78,25 @@
     transform: translateY(0px);
   }
 }
+
+/* Responsive Design - Mediq Queries */
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    /* background: red; */
+    gap: 10px;
+  }
+
+  .hero_image img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .hero_content h1 {
+    font-size: 37px;
+  }
+}

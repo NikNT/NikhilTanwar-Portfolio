@@ -22,3 +22,25 @@
   height: 20px;
   padding: 10px;
 }
+
+.nav_links__hamburger {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav_links {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+  }
+
+  .nav_links_li {
+    display: none;
+  }
+
+  .nav_links__hamburger {
+    display: block;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
