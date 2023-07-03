@@ -89,6 +89,8 @@
     margin: 0 auto;
     /* background: red; */
     gap: 10px;
+    padding: 50px;
+    height: calc(100vh - 250px);
   }
 
   .hero_image img {
