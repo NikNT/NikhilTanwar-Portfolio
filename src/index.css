@@ -4,9 +4,9 @@
   padding: 0;
 }
 
-:root {
+/* :root {
   --primary-color: #1c1c1c;
-}
+} */
 
 body {
   font-family: "Inter", sans-serif;
@@ -15,7 +15,7 @@ body {
 
   max-width: 1280px;
   margin: 0 auto;
-  background: #fff;
+  /* background: ; */
 
   scroll-behavior: smooth;
   box-sizing: border-box;

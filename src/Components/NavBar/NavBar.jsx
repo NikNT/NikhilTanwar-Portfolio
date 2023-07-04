@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./NavBar.module.css";
 import darkmode from "../../Assets/Dark Mode Switch.png";
+import lightmode from "../../Assets/Light Mode Switch.png";
 import hamburger from "../../Assets/hamburger.png";
 
-const NavBar = () => {
+const NavBar = ({ clickHandler, mode }) => {
   return (
     <>
       <header>
@@ -17,9 +18,10 @@ const NavBar = () => {
             </li>
           </ul>
           <img
-            src={darkmode}
+            src={mode ? lightmode : darkmode}
             alt="Dark Mode Switch"
             className={styles.nav_darkmode}
+            onClick={clickHandler}
           />
         </nav>
       </header>

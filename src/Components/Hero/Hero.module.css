@@ -6,13 +6,18 @@
   font-family: "Inter", sans-serif;
   font-family: "Karla", sans-serif;
   font-family: "Plus Jakarta Sans", sans-serif;
+  background: var(--bg-color);
+}
+
+.hero_image img {
+  border-radius: 12px;
 }
 
 .hero_content {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  color: #1c1c1c;
+  color: var(--text-color);
 }
 
 .hero_content h1 {
@@ -20,10 +25,6 @@
   font-size: 70px;
   font-family: Plus Jakarta Sans;
 }
-
-/* .hero_content h1 {
-  margin-bottom: -10px;
-} */
 
 .hero_content h1 {
   font-weight: 400;
@@ -36,7 +37,6 @@
   padding: 7px 20px;
   border-radius: 8px;
   margin-right: 8px;
-  /* border: none; */
   font-weight: bold;
 
   font-family: "Inter", sans-serif;
@@ -47,21 +47,24 @@
 }
 
 .hero_content__button___github {
-  background: #1c1c1c;
-  color: #fff;
+  background: var(--text-color);
+  color: var(--bg-color);
   border: none;
 }
 
 .hero_content__button___linkedin {
-  background-color: #fff;
-  border: 1.5px solid #1c1c1c;
+  background-color: var(--bg-color);
+  border: 1.5px solid var(--text-color);
   text-align: center;
+  color: var(--text-color);
 }
 
 .chevron {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  background: var(--bg-color);
 
   animation-name: main-animation;
   animation-duration: 1.3s;
@@ -79,7 +82,7 @@
   }
 }
 
-/* Responsive Design - Mediq Queries */
+/* Responsive Design - Media Queries */
 
 @media only screen and (max-width: 600px) {
   .hero {
@@ -87,7 +90,6 @@
     flex-direction: column;
     max-width: 400px;
     margin: 0 auto;
-    /* background: red; */
     gap: 10px;
     padding: 50px;
     height: calc(100vh - 250px);
