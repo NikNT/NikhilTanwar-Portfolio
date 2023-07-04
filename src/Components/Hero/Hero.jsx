@@ -4,6 +4,7 @@ import avatar from "../../Assets/avatar.png";
 import darkAvatar from "../../Assets/avatar-dark.png";
 import chevron from "../../Assets/chevron.png";
 import lightChevron from "../../Assets/white-chevron.png";
+import { Link } from "react-router-dom";
 
 const Hero = ({ mode }) => {
   const gitHub = "https://github.com/NikNT";
@@ -36,7 +37,9 @@ const Hero = ({ mode }) => {
         </div>
       </section>
       <div className={styles.chevron}>
-        <img src={mode ? lightChevron : chevron} alt="Chevron" />
+        <Link to="/about-me">
+          <img src={mode ? lightChevron : chevron} alt="Chevron" />
+        </Link>
       </div>
     </>
   );

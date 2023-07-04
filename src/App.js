@@ -1,29 +1,15 @@
-import { useEffect, useState } from "react";
 import "./App.css";
-import Hero from "./Components/Hero/Hero";
-import NavBar from "./Components/NavBar/NavBar";
+import { Route, Routes } from "react-router-dom";
+import AboutMe from "./Components/AboutMe/AboutMe";
+import Homepage from "./Homepage";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  useEffect(() => {
-    const body = document.body;
-    if (darkMode) {
-      body.classList.add("darkMode");
-    } else {
-      body.classList.remove("darkMode");
-    }
-  }, [darkMode]);
-
-  const clickHandler = () => {
-    setDarkMode(!darkMode);
-  };
-
   return (
     <div className="App">
-      <NavBar clickHandler={clickHandler} mode={darkMode} />
-      <Hero mode={darkMode} />
-      <Hero mode={darkMode} />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/about-me" element={<AboutMe />} />
+      </Routes>
     </div>
   );
 }
