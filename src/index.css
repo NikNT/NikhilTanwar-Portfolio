@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 /* :root {
@@ -17,6 +18,5 @@ body {
   margin: 0 auto;
   /* background: ; */
 
-  scroll-behavior: smooth;
   box-sizing: border-box;
 }

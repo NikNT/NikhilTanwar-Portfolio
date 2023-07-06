@@ -1,1 +1,53 @@
+.aboutme {
+  margin-top: 10px;
+  height: 100vh;
+  /* background: red; */
+}
+.aboutme h4 {
+  color: var(--text-color);
+  font-size: 24px;
+  padding-top: 15px;
+  text-align: center;
+}
 
+.cardContainer {
+  height: calc(100vh - 50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutme_cards {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 50px;
+  width: 100%;
+}
+
+.aboutme_card {
+  background: var(--text-color);
+  width: 30%;
+  border-radius: 10px;
+}
+
+.aboutme_card_body p {
+  color: var(--bg-color);
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.aboutme_card_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aboutme_card_title p {
+  color: var(--bg-color);
+  margin-right: 10px;
+}
+
+.aboutMe_card_title_img {
+  height: 100px;
+  border-radius: 18px;
+}
