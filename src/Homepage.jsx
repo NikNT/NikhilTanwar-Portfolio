@@ -3,6 +3,8 @@ import Hero from "./Components/Hero/Hero";
 import NavBar from "./Components/NavBar/NavBar";
 import AboutMe from "./Components/AboutMe/AboutMe";
 import Chevron from "./Components/Shared/Chevron";
+import Carousel from "./Components/Carousel";
+import Elastic from "./Components/Elastic";
 
 function Homepage() {
   const [darkMode, setDarkMode] = useState(false);
@@ -34,7 +36,9 @@ function Homepage() {
       <NavBar clickHandler={clickHandler} mode={darkMode} />
       <Hero mode={darkMode} />
       <Chevron mode={darkMode} />
-      {/* <AboutMe /> */}
+      <AboutMe mode={darkMode} />
+      {/* <Carousel /> */}
+      {/* <Elastic /> */}
     </>
   );
 }

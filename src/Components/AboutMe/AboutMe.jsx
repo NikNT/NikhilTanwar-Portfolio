@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./AboutMe.module.css";
-// import avatar from "../../Assets/avatar.png";
+import avatar from "../../Assets/avatar.png";
 import darkAvatar from "../../Assets/avatar-dark.png";
 import book from "../../Assets/book.gif";
 
-const AboutMe = () => {
+const AboutMe = ({ mode }) => {
   return (
     <section className={styles.aboutme}>
       <h4>About Me</h4>
@@ -14,38 +14,28 @@ const AboutMe = () => {
             <div className={styles.aboutme_card_title}>
               <img
                 className={styles.aboutMe_card_title_img}
-                src={darkAvatar}
+                src={mode ? avatar : darkAvatar}
                 alt="Avatar"
               />
               <p>Me</p>
             </div>
             <div className={styles.aboutme_card_body}>
-              <p>Hi</p>
-              <p>I'm Nikhil</p>
-              <p>A Self-taught</p>
-              <p>Pixel Nerdy</p>
-              <p>Front End Dev</p>
-              <p>I love ReactJS, XBox Series S,</p>
-              <p>and Pizza</p>
-            </div>
-          </div>
-          <div className={styles.aboutme_card}>
-            <div className={styles.aboutme_card_title}>
-              <img
-                className={styles.aboutMe_card_title_img}
-                src={darkAvatar}
-                alt="Avatar"
-              />
-              <p>Me</p>
-            </div>
-            <div className={styles.aboutme_card_body}>
-              <p>Hi</p>
-              <p>I'm Nikhil</p>
-              <p>A Self-taught</p>
-              <p>Pixel Nerdy</p>
-              <p>Front End Dev</p>
-              <p>I love ReactJS, XBox Series S,</p>
-              <p>and Pizza</p>
+              <p>Hi, I'm Nikhil</p>
+              <p>
+                A Self-taught
+                <br />
+                Pixel Nerdy
+                <br />
+                Front End Dev
+              </p>
+              <p>
+                I love ReactJS, XBox Series S,
+                <br />
+                and Pizza!
+              </p>
+              <p>
+                <em> I sculpt digital landscapes that enchant and inspire </em>
+              </p>
             </div>
           </div>
           <div className={styles.aboutme_card}>
@@ -64,7 +54,8 @@ const AboutMe = () => {
                 Punjab, India
               </p>
               <p>
-                PG Diploma Cloud Computing for Big Data Lambton College, Toronto
+                PG Diploma <br /> Cloud Computing for Big Data Lambton College,
+                Toronto
               </p>
               <p>Meta Front End Developer Professional Certificate</p>
             </div>
