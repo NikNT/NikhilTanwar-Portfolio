@@ -3,6 +3,7 @@ import styles from "./AboutMe.module.css";
 import avatar from "../../Assets/avatar.png";
 import darkAvatar from "../../Assets/avatar-dark.png";
 import book from "../../Assets/book.gif";
+import developer from "../../Assets/developer-light.gif";
 
 const AboutMe = ({ mode }) => {
   return (
@@ -10,6 +11,36 @@ const AboutMe = ({ mode }) => {
       <h4>About Me</h4>
       <div className={styles.cardContainer}>
         <div className={styles.aboutme_cards}>
+          <div className={styles.aboutme_card}>
+            <div className={styles.aboutme_card_title}>
+              <img
+                className={styles.aboutMe_card_title_img}
+                src={developer}
+                alt="Developer"
+              />
+              <p>My Tech Stack</p>
+            </div>
+            <div className={styles.aboutme_card_body}>
+              <p>
+                HTML5
+                <br />
+                CSS3
+                <br />
+                JavaScript
+                <br />
+                TypeScript
+              </p>
+              <p>
+                ReactJS <br /> NextJS
+              </p>
+              <p>
+                Bootstrap <br />
+                TailwindCSS
+                <br />
+                SASS
+              </p>
+            </div>
+          </div>
           <div className={styles.aboutme_card}>
             <div className={styles.aboutme_card_title}>
               <img
