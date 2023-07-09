@@ -1,72 +1,15 @@
 .aboutme {
   margin-top: 10px;
   height: 100vh;
-  /* background: red; */
+  /* background: yellowgreen; */
 }
 .aboutme h4 {
   color: var(--text-color);
   font-size: 24px;
-  padding-top: 15px;
+  /* padding-top: 15px; */
+  margin-top: 20px;
   text-align: center;
-}
-
-.cardContainer {
-  height: calc(100vh - 50px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.aboutme_cards {
-  display: flex;
-  justify-content: space-evenly;
-  padding-top: 50px;
-  width: 100%;
-}
-
-.aboutme_card {
-  background: var(--text-color);
-  width: 30%;
-  border-radius: 10px;
-  height: 467px;
-}
-
-.aboutme_card_body {
-  /* background: red; */
-  height: 365px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 2px;
-}
-
-.aboutme_card_body p {
-  color: var(--bg-color);
-  /* margin-bottom: 10px; */
-  padding: 10px;
-  font-size: 22px;
-  font-weight: 500;
-}
-
-.aboutme_card_title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.aboutme_card_title p {
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.aboutme_card_title p {
-  color: var(--bg-color);
-  margin-right: 10px;
-}
-
-.aboutMe_card_title_img {
-  height: 100px;
-  border-radius: 18px;
+  height: 50px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -78,19 +21,7 @@
   .aboutme h4 {
     text-align: center;
     font-size: 30px;
-    margin-top: 40px;
-    margin-bottom: 10px;
-  }
-
-  .aboutme_cards {
-    margin-top: 700px;
-    flex-direction: column;
-  }
-  .aboutme_card {
-    width: 80%;
-    height: auto;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    /* padding-top: 10px; */
+    margin-top: 100px;
+    /* margin-bottom: 10px; */
   }
 }

@@ -1,0 +1,97 @@
+.cardContainer {
+  /* height: calc(100vh - 50px); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: red;s */
+}
+
+.aboutme_cards {
+  display: flex;
+  justify-content: space-evenly;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  padding-top: 50px;
+  /* width: 100%; */
+}
+
+.aboutme_card {
+  /* background: var(--text-color); */
+  background-color: #1c1c1c;
+  width: 30%;
+  border-radius: 10px;
+  /* height: 467px; */
+  margin-bottom: 32px;
+  /* margin-right: 32px; */
+  border: 1px solid var(--text-color);
+  outline: none;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+
+.aboutme_card_body {
+  /* background: red; */
+  height: 365px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2px;
+}
+
+.aboutme_card_body p {
+  /* color: var(--bg-color); */
+  /* margin-bottom: 10px; */
+  color: #fff;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.aboutme_card_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aboutme_card_title p {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.aboutme_card_title p {
+  color: var(--bg-color);
+  margin-right: 10px;
+}
+
+.aboutMe_card_title_img {
+  height: 100px;
+  border-radius: 18px;
+}
+
+.aboutme_card_body_author {
+  font-size: 17px;
+}
+
+.aboutme_card_body_quote {
+  color: #aaaaaa;
+  font-size: 15px;
+}
+
+.aboutme_card_body_quote_fav {
+  color: #aaaaaa;
+  font-size: 25px;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutme_cards {
+    /* margin-top: 700px; */
+    flex-direction: column;
+  }
+  .aboutme_card {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    /* padding-top: 10px; */
+  }
+}
