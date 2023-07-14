@@ -1,12 +1,13 @@
 .chevron {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 0px;
+  /* width: 0px; */
   margin: 0 auto;
   /* background: red; */
 
-  background: var(--bg-color);
+  /* background: var(--bg-color); */
 
   animation-name: main-animation;
   animation-duration: 1.3s;

@@ -7,7 +7,6 @@ const AboutMe = ({ mode }) => {
     <section className={styles.aboutme}>
       <h4>About Me</h4>
       <Cards mode={mode} />
-      {/* <a href="https://lordicon.com/">Icons by Lordicon.com</a> */}
     </section>
   );
 };
