@@ -4,6 +4,7 @@ import NavBar from "./Components/NavBar/NavBar";
 import AboutMe from "./Components/AboutMe/AboutMe";
 import Chevron from "./Components/Shared/Chevron";
 import LetsConnect from "./Components/LetsConnect/LetsConnect";
+// import Fetch from "./Components/LetsConnect/Fetch";
 
 function Homepage() {
   const [darkMode, setDarkMode] = useState(false);
@@ -37,6 +38,7 @@ function Homepage() {
       <Chevron mode={darkMode} />
       <AboutMe mode={darkMode} />
       <LetsConnect />
+      {/* <Fetch /> */}
     </>
   );
 }

@@ -4,6 +4,8 @@ import darkAvatar from "../../Assets/avatar-dark.png";
 import book from "../../Assets/book.gif";
 import developer from "../../Assets/developer-light.gif";
 import bookReader from "../../Assets/book-reader.gif";
+import work from "../../Assets/work.gif";
+import quote from "../../Assets/quote.gif";
 
 const Cards = () => {
   return (
@@ -93,8 +95,8 @@ const Cards = () => {
           <div className={styles.aboutme_card_title}>
             <img
               className={styles.aboutMe_card_title_img}
-              src={bookReader}
-              alt="Book Reader"
+              src={work}
+              alt="Work"
             />
             <p>Work Experience</p>
           </div>
@@ -149,20 +151,14 @@ const Cards = () => {
                 to become."
               </em>
             </p>
-            {/* <p>
-              Life's Amazing Secrets <br />
-              TailwindCSS
-              <br />
-              SASS
-            </p> */}
           </div>
         </div>
         <div className={styles.aboutme_card}>
           <div className={styles.aboutme_card_title}>
             <img
               className={styles.aboutMe_card_title_img}
-              src={bookReader}
-              alt="Book Reader"
+              src={quote}
+              alt="Quote"
             />
             <p>Fav Quote</p>
           </div>

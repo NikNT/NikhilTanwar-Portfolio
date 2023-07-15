@@ -1,16 +1,99 @@
-.formContainer {
+.container {
   height: 100vh;
 }
-
-.formContainer h1 {
+.letsConnectHeading {
+  font-size: 24px;
   text-align: center;
+  padding-top: 15px;
+  color: var(--text-color);
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 30px);
+  width: 100%;
+  /* background: green; */
+}
+
+.leftContent section {
+  width: 50%;
+  /* background: red; */
+}
+
+.leftContent section p {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.rightContent {
+  width: auto;
+  /* background: yellow; */
+}
+
+.rightContent form label {
+  font-size: 22px;
+}
+
+.rightContent form input,
+textarea {
+  background: #1c1c1c;
+  outline: none;
+  /* border: none; */
+  color: #fff;
+
+  width: 400px;
+  max-width: 400px;
+
+  padding: 20px 30px;
+  border-radius: 4px;
+
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.rightContent textarea {
+  min-height: 207px;
+  resize: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaaaaa;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 15px;
+}
+
+input,
+textarea,
+button {
+  border: 1px solid var(--text-color);
 }
 
 .formWrapper {
   display: flex;
-  align-content: center;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
-  background: yellowgreen;
+  align-items: flex-start;
+  gap: 20px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.submitButton {
+  background: #1c1c1c;
+  color: #fff;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  /* border: none; */
+  width: 100px;
+  cursor: pointer;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.submitButton:focus {
+  background: green;
 }
