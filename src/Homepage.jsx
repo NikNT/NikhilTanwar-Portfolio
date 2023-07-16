@@ -34,10 +34,10 @@ function Homepage() {
 
   return (
     <>
-      {/* <NavBar clickHandler={clickHandler} mode={darkMode} />
+      <NavBar clickHandler={clickHandler} mode={darkMode} />
       <Hero mode={darkMode} />
       <Chevron mode={darkMode} />
-      <AboutMe mode={darkMode} /> */}
+      <AboutMe mode={darkMode} />
       <LetsConnect mode={darkMode} />
       {/* <Fetch /> */}
       {/* <HeartsCounter /> */}
