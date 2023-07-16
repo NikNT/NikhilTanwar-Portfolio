@@ -4,6 +4,7 @@ import NavBar from "./Components/NavBar/NavBar";
 import AboutMe from "./Components/AboutMe/AboutMe";
 import Chevron from "./Components/Shared/Chevron";
 import LetsConnect from "./Components/LetsConnect/LetsConnect";
+// import HeartsCounter from "./Components/LetsConnect/Heart";
 // import Fetch from "./Components/LetsConnect/Fetch";
 
 function Homepage() {
@@ -37,8 +38,9 @@ function Homepage() {
       <Hero mode={darkMode} />
       <Chevron mode={darkMode} />
       <AboutMe mode={darkMode} />
-      <LetsConnect />
+      <LetsConnect mode={darkMode} />
       {/* <Fetch /> */}
+      {/* <HeartsCounter /> */}
     </>
   );
 }

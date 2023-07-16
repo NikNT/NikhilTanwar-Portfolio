@@ -1,33 +1,32 @@
 import React, { useState } from "react";
 import styles from "./LetsConnect.module.css";
-
-// import firebase from "firebase/compat/app";
-// import "firebase/compat/firestore";
+import heart from "../../Assets/heart.png";
+import redHeart from "../../Assets/red-heart.png";
+import lightHeart from "../../Assets/heart-light.png";
 
 import { firestore } from "../firebase";
+import Modal from "../Modal/Modal";
 
-// const firebaseConfig = {
-//   apiKey: "AIzaSyC7_qwf5wgzO7l7vX2Sqv-CzE8mpidNi1c",
-//   authDomain: "niktanportfolio.firebaseapp.com",
-//   databaseURL: "https://niktanportfolio-default-rtdb.firebaseio.com",
-//   projectId: "niktanportfolio",
-//   storageBucket: "niktanportfolio.appspot.com",
-//   messagingSenderId: "833333821531",
-//   appId: "1:833333821531:web:2146341a0e13cc335dbf7e",
-// };
-
-// firebase.initializeApp(firebaseConfig);
-// const firestore = firebase.firestore();
-
-const LetsConnect = () => {
+const LetsConnect = ({ mode }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [like, setLike] = useState(false);
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    document.body.style.overflow = "auto";
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Save form data to Firestore
     firestore
       .collection("messages")
       .add({
@@ -37,25 +36,19 @@ const LetsConnect = () => {
       })
       .then(() => {
         console.log("Form data submitted successfully!");
-        // Clear form fields
         setName("");
         setEmail("");
         setMessage("");
-        window.alert(
-          `Hi ${name}, your response has been recorded. I'll contact you asap ♥️`
-        );
+        openModal();
       })
       .catch((error) => {
         console.error("Error submitting form data:", error);
       });
   };
 
-  // const handleKeyDown = (event) => {
-  //   if (event.key === "Enter") {
-  //     event.preventDefault();
-  //     event.target.form.submit(); // Trigger the form submission
-  //   }
-  // };
+  const handleHeart = () => {
+    setLike(!like);
+  };
 
   return (
     <>
@@ -73,7 +66,15 @@ const LetsConnect = () => {
                 If you didn't, I would love to have any
                 suggestion/recommendation.
               </p>
-              <p>Send a message to connect with me or send me a ♥️ </p>
+              <p>
+                Send a message to connect with me or send me a
+                <img
+                  src={like ? redHeart : mode ? lightHeart : heart}
+                  alt="Heart"
+                  onClick={handleHeart}
+                  className={styles.heart}
+                />
+              </p>
             </section>
           </div>
           <div className={styles.rightContent}>
@@ -92,7 +93,8 @@ const LetsConnect = () => {
               <div>
                 {/* <label htmlFor="email">Email</label> */}
                 <input
-                  type="email"
+                  // type="email"
+                  type="text"
                   id="email"
                   value={email}
                   placeholder="Email"
@@ -121,6 +123,10 @@ const LetsConnect = () => {
             </form>
           </div>
         </div>
+        <div className={styles.modal}>
+          {isModalOpen && <Modal closeModal={closeModal} name={name} />}
+        </div>
+        {isModalOpen && <div className={styles.overlay}></div>}
       </div>
     </>
   );
