@@ -12,7 +12,8 @@
 @media only screen and (max-width: 600px) {
   .aboutme {
     margin-top: 31px;
-    height: 100vh;
+    /* height: 100vh; */
+    height: auto;
   }
 
   .aboutme h4 {

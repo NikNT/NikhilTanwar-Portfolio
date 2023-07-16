@@ -30,7 +30,8 @@
 
 .aboutme_card_body {
   /* background: red; */
-  height: 365px;
+  /* height: 390px; */
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
