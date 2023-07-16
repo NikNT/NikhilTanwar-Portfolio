@@ -122,3 +122,40 @@ button {
   width: 100px;
   height: 100px;
 }
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .leftContent {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* background: blue; */
+  }
+
+  .leftContent section {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .leftContent section p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .rightContent {
+    width: 80%;
+  }
+
+  .rightContent form input,
+  textarea {
+    width: 60vw;
+  }
+}

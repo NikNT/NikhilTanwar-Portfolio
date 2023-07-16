@@ -19,10 +19,12 @@ const Modal = ({ closeModal, name }) => {
     <div className={styles.modal}>
       <div className={styles.modal_content}>
         {!showContent && (
-          <div className={styles.modal_submission}>
-            <h4>Submitting your response!</h4>
-            <img src={submit} className={styles.submit} alt="Submission" />
-          </div>
+          <>
+            <div className={styles.modal_submission}>
+              <h4>Submitting your response!</h4>
+              <img src={submit} className={styles.submit} alt="Submission" />
+            </div>
+          </>
         )}
         {showContent && (
           <div>

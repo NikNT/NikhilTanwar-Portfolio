@@ -53,3 +53,19 @@
   height: 150px;
   width: 150px;
 }
+
+@media only screen and (max-width: 600px) {
+  .modal {
+    height: auto;
+    width: 250px;
+    border-radius: 8px;
+  }
+
+  .modal_submission {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
