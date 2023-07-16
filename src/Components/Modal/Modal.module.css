@@ -59,6 +59,7 @@
     height: auto;
     width: 250px;
     border-radius: 8px;
+    margin-top: 50%;
   }
 
   .modal_submission {
