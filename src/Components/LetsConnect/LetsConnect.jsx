@@ -87,6 +87,7 @@ const LetsConnect = ({ mode }) => {
                   value={name}
                   placeholder="Name"
                   onChange={(e) => setName(e.target.value)}
+                  pattern="^[A-Za-z ]+$"
                   required
                 />
               </div>
@@ -99,6 +100,8 @@ const LetsConnect = ({ mode }) => {
                   value={email}
                   placeholder="Email"
                   onChange={(e) => setEmail(e.target.value)}
+                  pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+                  title="name@email.com"
                   required
                 />
               </div>
@@ -112,6 +115,7 @@ const LetsConnect = ({ mode }) => {
                   value={message}
                   placeholder="Message"
                   onChange={(e) => setMessage(e.target.value)}
+                  pattern="^[a-zA-Z0-9.,!?()\s]+$"
                   required
                 ></textarea>
               </div>
